@@ -57,6 +57,6 @@ defmodule Issues.CLI do
   end
 
   def process({user, project, _count}) do
-    #Issues.GithubIssues(user, project)
+    Issues.GithubIssues.fetch(user, project)
   end
 end
